@@ -1,0 +1,60 @@
+<html>
+    <head>
+<title>Birthday</title>
+    </head>
+    <style>
+        /* Clear out these styles to start fresh or use this as a base! */
+
+@import url(https://fonts.googleapis.com/css?family=Kanit:600);
+
+html { height: 100%; display: flex; }
+body { margin: auto; }
+html, body {
+  background: lightcoral;
+  color: #FFF;
+  font: normal 600 10vw/1.5 Kanit, sans-serif;
+}
+
+.splitting .char {
+  animation: slide-in .7s cubic-bezier(.3, 0, .7, 1) both;
+  animation-delay: calc(50ms * var(--char-index));
+}
+
+@keyframes slide-in {
+  from {
+    transform: scale(0.4) translateY(80%);
+    opacity: 0;
+  }
+}
+
+ul {
+  list-style: none;
+  
+}
+
+li{
+    color: black;
+    font-size: 180px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+    </style>
+    <body>
+
+        <ul data-splitting>
+            <li >Happy Birthday</li>
+            <li >Shiwani</li>
+
+            <li>Thank u</li>
+            
+            <li>for</li>
+            <li>everything</li>
+            </ul>
+
+            <h1>Keep smiling yar</h1>
+        <script>
+            Splitting();
+        </script>
+
+    </body>
+</html>
